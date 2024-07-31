@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Tienda - MasFiguras</title>
+  <link href="style/styles.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="javascript/javascript.js"></script>
+
+  <!-- CDN BOOTSTRAP Hojas de Estilos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- CDN BOOTSTRAP Javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-dark text-white">
+  <!-- Barra superior con logo, redes sociales e icono del carrito -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="img/logo_tienda.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-top me-2">
+        <img src="img/letras_logo.png" alt="Logo" width="140" height="40" class="d-inline-block align-text-top me-2">
+      </a>
+      <div class="social-icons mx-2">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="img/facebook_icono.png" alt="Facebook" width="34" height="34"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="img/twitter_icono.png" alt="Twitter" width="34" height="34"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="img/instagram_icono.png" alt="Instagram" width="34" height="34"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex align-items-center">
+        <a class="nav-link" href="#">
+          <img src="img/carrito_icono.png" alt="Carrito" width="24" height="24" class="me-2">
+          Carrito
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenedor principal con imagen de fondo -->
+  <div class="container-fluid p-0 bg-dark">
+    <div class="position-relative w-100" style="height: 90vh;">
+      <!-- Imagen de fondo -->
+      <img src="img/imagen_main.png" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Imagen Main">
+
+      <!-- Hiperenlaces verticales en la esquina superior derecha -->
+      <div class="position-absolute top-0 end-0 p-3 text-end text-vertical">
+        <a href="Figuras.html" class="text-white text-no-underline d-block mb-2">Inicio</a>
+        <a href="Contacto.html" class="text-white text-no-underline d-block">Contacto</a>
+      </div>
+
+      <!-- Contenedor flotante para la galería de productos -->
+      <div class="gallery-container">
+        <h2 class="text-white">Galería de Productos</h2>
+        
+        <!-- Fila de productos -->
+        <div class="row">
+          <!-- Primer producto -->
+          <div class="col-md-4">
+            <div class="card bg-dark text-white mb-4">
+              <img src="img/producto1.png" class="card-img-top" alt="Producto 1">
+              <div class="card-body">
+                <h5 class="card-title">Producto 1</h5>
+                <p class="card-text">Descripción del producto 1.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Segundo producto -->
+          <div class="col-md-4">
+            <div class="card bg-dark text-white mb-4">
+              <img src="img/producto2.png" class="card-img-top" alt="Producto 2">
+              <div class="card-body">
+                <h5 class="card-title">Producto 2</h5>
+                <p class="card-text">Descripción del producto 2.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Tercer producto -->
+          <div class="col-md-4">
+            <div class="card bg-dark text-white mb-4">
+              <img src="img/producto3.png" class="card-img-top" alt="Producto 3">
+              <div class="card-body">
+                <h5 class="card-title">Producto 3</h5>
+                <p class="card-text">Descripción del producto 3.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cuarto producto -->
+          <div class="col-md-4">
+            <div class="card bg-dark text-white mb-4">
+              <img src="img/producto4.png" class="card-img-top" alt="Producto 4">
+              <div class="card-body">
+                <h5 class="card-title">Producto 4</h5>
+                <p class="card-text">Descripción del producto 4.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quinto producto -->
+          <div class="col-md-4">
+            <div class="card bg-dark text-white mb-4">
+              <img src="img/producto5.png" class="card-img-top" alt="Producto 5">
+              <div class="card-body">
+                <h5 class="card-title">Producto 5</h5>
+                <p class="card-text">Descripción del producto 5.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sexto producto -->
+          <div class="col-md-4">
+            <div class="card bg-dark text-white mb-4">
+              <img src="img/producto6.png" class="card-img-top" alt="Producto 6">
+              <div class="card-body">
+                <h5 class="card-title">Producto 6</h5>
+                <p class="card-text">Descripción del producto 6.</p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- Fin de la fila de productos -->
+      </div> <!-- Fin del contenedor de la galería -->
+    </div> <!-- Fin del contenedor principal con imagen de fondo -->
+  </div> <!-- Fin del contenedor principal -->
+</body>
+</html>
+

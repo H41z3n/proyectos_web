@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Incluir la fuente personalizada */
+@font-face {
+  font-family: 'OldSchoolUnitedShadowItalic';
+  src: url('../style/fonts/old_school_united_shadow_italic.ttf') format('truetype');
+}
+
+/* Texto Flotante (Nombre_Sitio) */
+.site-name-float {
+  color: rgb(249, 247, 247);
+  font-family: 'OldSchoolUnitedShadowItalic', sans-serif;
+  font-size: 4rem; /* Tamaño de letra más grande */
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0); /* Fondo blanco semitransparente */
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  line-height: 0.9; /* Ajuste de la altura de línea para más espacio entre líneas */
+}
+
+/* Estilos para el desplazamiento de las líneas de texto flotante*/
+.site-name-float .line-1 {
+  margin-left: 15px; /* Línea 1 sin desplazamiento */
+}
+.site-name-float .line-2 {
+  margin-left: 180px; /* Desplazamiento de la línea 2 */
+}
+.site-name-float .line-3 {
+  margin-left: 220px; /* Desplazamiento de la línea 3 */
+}
+
+/* Posicion de los iconos sociales */
+.social-icons {
+  margin-left: -5px; /* Ajustar según sea necesario */
+}
+
+/* Reducir el margen entre los iconos de redes sociales */
+.social-icons .nav-item {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* Hacer que la imagen ocupe toda la pantalla sin barra de desplazamiento */
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #1a1a1a; /* Fondo negro mate */
+}
+
+/* Ajuste para el texto en la esquina superior derecha */
+.text-vertical {
+  writing-mode: vertical-lr;
+  text-decoration: none;
+  text-orientation: upright;
+}
+
+/* Estilos para el texto de navegación sin subrayado */
+.text-no-underline {
+  text-decoration: none;
+}
+
+/* Estilos para la galería de productos flotante */
+.gallery-container {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Espacio entre tarjetas */
+}
+
+.card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Estilos para el contenedor flotante del formulario */
+.form-container {
+  width: 50%;
+  max-width: 400px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px; /* Padding para el contenido */
+  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+  margin-top: 10px; /* Margen superior para espacio respecto a la barra de navegación */
+  margin-bottom: 20px; /* Margen inferior para espacio respecto al margen inferior */
+  position: absolute; /* Permite ajustar la posición con respecto a elementos padres */
+  top: 50%; /* Ajuste adicional para centrar el formulario verticalmente */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px; /* Bordes redondeados */
+  color: white; /* Color del texto */
+}
+
+/* Ajustes para responsividad */
+@media (max-width: 768px) {
+  .product-gallery {
+    margin-top: 20px;
+  }
+}
+
+
