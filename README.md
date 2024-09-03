@@ -1,1 +1,1 @@
-Proyecto didáctico: Creación de Web (Solo Frontend) con Bootstrap
+Proyecto didáctico: Certificado de profesionalidad L-II Confección y Publicación de páginas Web.
