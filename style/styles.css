@@ -7,6 +7,24 @@
   src: url('../style/fonts/old_school_united_shadow_italic.ttf') format('truetype');
 }
 
+/* Ajustes de tamaño y alineación de la navbar en móviles */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    width: 30px;
+    height: 25px;
+  }
+  .navbar-nav .nav-item {
+    margin-left: 10px;
+  }
+}
+
+/* Aumentar el tamaño de los links en pantallas pequeñas */
+@media (max-width: 768px) {
+  .text-vertical, .text-no-underline {
+    font-size: 6.2rem; /* Aumentar el tamaño de la fuente */
+  }
+}
+
 /* Texto Flotante (Nombre_Sitio) */
 .site-name-float {
   color: rgb(249, 247, 247);
@@ -19,7 +37,7 @@
   line-height: 0.9; /* Ajuste de la altura de línea para más espacio entre líneas */
 }
 
-/* Estilos para el desplazamiento de las líneas de texto flotante*/
+/* Estilos para el desplazamiento de las líneas de texto flotante */
 .site-name-float .line-1 {
   margin-left: 15px; /* Línea 1 sin desplazamiento */
 }
@@ -30,15 +48,42 @@
   margin-left: 220px; /* Desplazamiento de la línea 3 */
 }
 
-/* Posicion de los iconos sociales */
+
+
+/* Centrar los iconos de redes sociales en pantallas grandes */
 .social-icons {
-  margin-left: -5px; /* Ajustar según sea necesario */
+  display: flex;
+  justify-content: center; /* Centrar los íconos */
+  align-items: center; /* Alineación vertical centrada */
+  margin-left: auto;
+  margin-right: auto;
+  gap: 10px; /* Añadir espacio entre los iconos */
 }
 
-/* Reducir el margen entre los iconos de redes sociales */
-.social-icons .nav-item {
-  margin-left: 2px;
-  margin-right: 2px;
+/* Mantener los íconos de redes sociales y el carrito en una sola fila cuando la navbar colapsa */
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: row; /* Mantener todo en una fila */
+    justify-content: space-between; /* Espacio entre iconos y carrito */
+    align-items: center; /* Alineación vertical */
+    width: 100%;
+  }
+
+  .social-icons {
+    justify-content: flex-start; /* Alinea los iconos al inicio en móviles */
+    flex-grow: 1; /* Los iconos ocupan el espacio disponible */
+    gap: 10px; /* Mantén el espacio entre los iconos */
+  }
+
+  .cart {
+    justify-content: flex-end; /* Mantén el carrito a la derecha */
+  }
+}
+
+/* Asegurarse de que el carrito se mantenga a la derecha en pantallas grandes */
+.cart {
+  margin-left: auto; /* Empuja el carrito hacia la derecha */
 }
 
 /* Hacer que la imagen ocupe toda la pantalla sin barra de desplazamiento */
@@ -47,6 +92,48 @@ body, html {
   margin: 0;
   overflow: hidden;
   background-color: #1a1a1a; /* Fondo negro mate */
+}
+
+/* Deshabilitar scroll en pantallas grandes */
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Imagen de fondo en pantallas grandes */
+img.img-fluid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ajustes para la imagen en dispositivos móviles */
+@media (max-width: 768px) {
+  img.img-fluid {
+    height: auto; /* Permite que la imagen se ajuste a la altura de la pantalla */
+    object-fit: contain; /* Mantiene la imagen completa visible */
+  }
+}
+
+/* Habilitar scroll en dispositivos móviles */
+@media (max-width: 768px) {
+  body, html {
+    overflow-y: auto; /* Permitir scroll vertical en móviles */
+  }
+}
+
+/* Tamaño del texto en pantallas grandes */
+.site-name-float {
+  font-size: 4rem;
+}
+
+/* Ajuste del tamaño del texto en dispositivos móviles */
+@media (max-width: 768px) {
+  .site-name-float {
+    font-size: 2.5rem;
+    text-align: center;
+  }
 }
 
 /* Ajuste para el texto en la esquina superior derecha */
@@ -62,6 +149,13 @@ body, html {
 }
 
 /* Estilos para la galería de productos flotante */
+
+/* Añadir espacio entre el título y los productos */
+.gallery-container h2 {
+  margin-bottom: 20px; /* Ajusta el valor según el espacio que desees */
+}
+
+/* Estilos para el contenedor de galería de productos */
 .gallery-container {
   position: absolute;
   top: 3%;
@@ -72,6 +166,22 @@ body, html {
   padding: 20px;
   border-radius: 10px;
   overflow: auto;
+}
+
+/* Mostrar 2 productos por fila en pantallas pequeñas */
+@media (max-width: 768px) {
+  .gallery-container .col-md-4 {
+    width: 50%; /* Asegura que cada producto ocupe el 50% del ancho en móviles */
+    display: inline-block; /* Asegurar que los productos se muestren correctamente en dos columnas */
+  }
+}
+
+/* Ajuste de altura en pantallas pequeñas */
+@media (max-width: 768px) {
+  .gallery-container {
+    height: auto; /* Ajusta automáticamente la altura en pantallas pequeñas */
+    padding: 10px; /* Ajustar el padding en móviles */
+  }
 }
 
 .card {
@@ -86,6 +196,13 @@ body, html {
   border-top-right-radius: 10px;
   max-width: 100%;
   height: auto;
+}
+
+/* Asegurarnos de que las imágenes se adapten bien */
+.card img {
+  width: 100%; /* Asegura que la imagen ocupe todo el espacio disponible */
+  max-height: 200px; /* Limitar la altura máxima de las imágenes para evitar que se estiren demasiado */
+  object-fit: cover; /* Asegura que las imágenes se adapten bien al espacio sin distorsionarse */
 }
 
 .card-body {
@@ -110,6 +227,16 @@ body, html {
   color: white; /* Color del texto */
 }
 
+/* Ajustes para el formulario de contacto en pantallas pequeñas */
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%; /* Hacer el formulario más estrecho en móviles */
+    padding: 15px;
+    margin-top: 30px; /* Ajustar el margen superior */
+    top: 45%; /* Centrar verticalmente */
+  }
+}
+
 /* Desactivar el cambio de puntero */
 .no-pointer {
   pointer-events: none;
@@ -124,12 +251,10 @@ body, html {
   filter: grayscale(100%);
 }
 
-
 /* Ajustes para responsividad */
 @media (max-width: 768px) {
   .product-gallery {
     margin-top: 20px;
   }
 }
-
 
