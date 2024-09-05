@@ -28,6 +28,8 @@
         <img src="img/letras_logo.png" alt="Logo" width="140" height="40" class="d-inline-block align-text-top me-2">
       </a>
   
+
+    
       <!-- Botón para expandir/colapsar la navbar en móviles -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -36,27 +38,29 @@
       <!-- Contenedor colapsable para los iconos de redes sociales y el carrito -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav w-100 d-flex justify-content-between align-items-center">
-          <!-- Iconos de redes sociales -->
-          <li class="social-icons d-flex">
-            <a class="nav-link" href="https://facebook.com" target="_blank">
-              <img src="img/facebook_icono.png" alt="Facebook" width="34" height="34">
-            </a>
-            <a class="nav-link" href="https://twitter.com" target="_blank">
-              <img src="img/twitter_icono.png" alt="Twitter" width="34" height="34">
-            </a>
-            <a class="nav-link" href="https://instagram.com" target="_blank">
-              <img src="img/instagram_icono.png" alt="Instagram" width="34" height="34">
-            </a>
-          </li>
-  
+          
+          <!-- En esta parte vamos a obviar los iconos sociales -->
+
           <!-- Carrito alineado a la derecha -->
           <li class="nav-item cart">
             <a class="nav-link" href="#">
               <img src="img/carrito_icono.png" alt="Carrito" width="24" height="24" class="me-2">
               Carrito
             </a>
+
+       
           </li>
+
+
         </ul>
+                                 <!-- Botón para activar/desactivar el modo daltonismo -->
+                                 <button id="toggleDaltonismMode" class="btn btn-link p-0 ms-3">
+                                  <img src="img/daltonismo.png" alt="Modo Daltonismo" width="34" height="34">
+                                </button>
+                              
+                                <!-- Script para activar/desactivar el modo daltonismo -->
+                                  <script src="javascript/javascript.js"></script>
+
       </div>
     </div>
   </nav>

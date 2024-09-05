@@ -18,16 +18,9 @@
   }
 }
 
-/* Aumentar el tamaño de los links en pantallas pequeñas */
-@media (max-width: 768px) {
-  .text-vertical, .text-no-underline {
-    font-size: 6.2rem; /* Aumentar el tamaño de la fuente */
-  }
-}
-
 /* Texto Flotante (Nombre_Sitio) */
 .site-name-float {
-  color: rgb(249, 247, 247);
+  color: rgb(82, 146, 62);
   font-family: 'OldSchoolUnitedShadowItalic', sans-serif;
   font-size: 4rem; /* Tamaño de letra más grande */
   font-weight: 700;
@@ -47,8 +40,6 @@
 .site-name-float .line-3 {
   margin-left: 220px; /* Desplazamiento de la línea 3 */
 }
-
-
 
 /* Centrar los iconos de redes sociales en pantallas grandes */
 .social-icons {
@@ -128,14 +119,6 @@ img.img-fluid {
   font-size: 4rem;
 }
 
-/* Ajuste del tamaño del texto en dispositivos móviles */
-@media (max-width: 768px) {
-  .site-name-float {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-}
-
 /* Ajuste para el texto en la esquina superior derecha */
 .text-vertical {
   writing-mode: vertical-lr;
@@ -148,9 +131,7 @@ img.img-fluid {
   text-decoration: none;
 }
 
-/* Estilos para la galería de productos flotante */
-
-/* Añadir espacio entre el título y los productos */
+/* Añadir espacio entre el título y los productos dentro de la galeria */
 .gallery-container h2 {
   margin-bottom: 20px; /* Ajusta el valor según el espacio que desees */
 }
@@ -234,13 +215,29 @@ img.img-fluid {
     padding: 15px;
     margin-top: 30px; /* Ajustar el margen superior */
     top: 45%; /* Centrar verticalmente */
+    overflow-y: auto; /* Agregar scroll vertical si es necesario */
   }
 }
+
+  /* Permitir scroll en la página completa para pantallas pequeñas */
+  body, html {
+    overflow-y: auto;
+  }
 
 /* Desactivar el cambio de puntero */
 .no-pointer {
   pointer-events: none;
 }
+
+
+/* Otros ajustes para mejorar la responsividad en pantallas pequeñas */
+.product-gallery {
+  margin-top: 20px;
+}
+
+
+
+
 
 /* Modo Daltonismo */
 .daltonism-mode body,
@@ -249,12 +246,5 @@ img.img-fluid {
 .daltonism-mode .form-container,
 .daltonism-mode .main-image {
   filter: grayscale(100%);
-}
-
-/* Ajustes para responsividad */
-@media (max-width: 768px) {
-  .product-gallery {
-    margin-top: 20px;
-  }
 }
 
