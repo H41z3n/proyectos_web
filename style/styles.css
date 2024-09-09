@@ -51,24 +51,15 @@
   gap: 10px; /* Añadir espacio entre los iconos */
 }
 
-/* Mantener los íconos de redes sociales y el carrito en una sola fila cuando la navbar colapsa */
+/* Aumentar el margen izquierdo del icono de daltonismo */
+.icono-daltonismo {
+  margin-right: 30px !important; /* Ajusta el valor según tus necesidades */
+}
+
+/* Para pantallas pequeñas, si deseas un ajuste diferente */
 @media (max-width: 768px) {
-  .navbar-nav {
-    display: flex;
-    flex-direction: row; /* Mantener todo en una fila */
-    justify-content: space-between; /* Espacio entre iconos y carrito */
-    align-items: center; /* Alineación vertical */
-    width: 100%;
-  }
-
-  .social-icons {
-    justify-content: flex-start; /* Alinea los iconos al inicio en móviles */
-    flex-grow: 1; /* Los iconos ocupan el espacio disponible */
-    gap: 10px; /* Mantén el espacio entre los iconos */
-  }
-
-  .cart {
-    justify-content: flex-end; /* Mantén el carrito a la derecha */
+  .icono-daltonismo {
+    margin-right: 25px; /* Ajuste en móviles */
   }
 }
 
@@ -77,6 +68,7 @@
   margin-left: auto; /* Empuja el carrito hacia la derecha */
 }
 
+/* Estilos para el fondo */
 /* Hacer que la imagen ocupe toda la pantalla sin barra de desplazamiento */
 body, html {
   height: 100%;
@@ -107,30 +99,26 @@ img.img-fluid {
   }
 }
 
-/* Habilitar scroll en dispositivos móviles */
-@media (max-width: 768px) {
-  body, html {
-    overflow-y: auto; /* Permitir scroll vertical en móviles */
-  }
-}
-
 /* Tamaño del texto en pantallas grandes */
 .site-name-float {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
-/* Ajuste para el texto en la esquina superior derecha */
+/* Navegación */
+/* Enlaces de navegación verticales */
 .text-vertical {
   writing-mode: vertical-lr;
   text-decoration: none;
   text-orientation: upright;
+  font-size: 1.2rem !important;
 }
 
-/* Estilos para el texto de navegación sin subrayado */
+/* Enlaces de navegación sin subrayado */
 .text-no-underline {
   text-decoration: none;
 }
 
+/* Galería */
 /* Añadir espacio entre el título y los productos dentro de la galeria */
 .gallery-container h2 {
   margin-bottom: 20px; /* Ajusta el valor según el espacio que desees */
@@ -140,6 +128,7 @@ img.img-fluid {
 .gallery-container {
   position: absolute;
   top: 3%;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   height: 95%;
@@ -149,22 +138,30 @@ img.img-fluid {
   overflow: auto;
 }
 
-/* Mostrar 2 productos por fila en pantallas pequeñas */
+.gallery-container .row {
+  justify-content: space-between !important; /* Distribuye los productos con más espacio */
+}
+
+/* Deshabilitar scroll en pantallas grandes */
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Habilitar scroll en pantallas pequeñas */
 @media (max-width: 768px) {
-  .gallery-container .col-md-4 {
-    width: 50%; /* Asegura que cada producto ocupe el 50% del ancho en móviles */
-    display: inline-block; /* Asegurar que los productos se muestren correctamente en dos columnas */
+  body, html {
+    overflow-y: auto; /* Permitir scroll vertical en móviles */
   }
 }
 
-/* Ajuste de altura en pantallas pequeñas */
-@media (max-width: 768px) {
-  .gallery-container {
-    height: auto; /* Ajusta automáticamente la altura en pantallas pequeñas */
-    padding: 10px; /* Ajustar el padding en móviles */
-  }
+ /* Permitir scroll en la página completa para pantallas pequeñas */
+ body, html {
+  overflow-y: auto;
 }
-
+ 
+/* Estilos para tarjetas de productos */
 .card {
   background-color: #fff;
   border-radius: 10px;
@@ -172,25 +169,26 @@ img.img-fluid {
   margin-bottom: 20px; /* Espacio entre tarjetas */
 }
 
-.card img {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  max-width: 100%;
-  height: auto;
+/* Mostrar 2 productos por fila en pantallas pequeñas */
+@media (max-width: 768px) {
+  .col-6 {
+    width: 50% !important;
+  }
 }
 
-/* Asegurarnos de que las imágenes se adapten bien */
+/* Asegurarnos de que las imágenes se adapten bien en las tarjetas */
 .card img {
   width: 100%; /* Asegura que la imagen ocupe todo el espacio disponible */
   max-height: 200px; /* Limitar la altura máxima de las imágenes para evitar que se estiren demasiado */
   object-fit: cover; /* Asegura que las imágenes se adapten bien al espacio sin distorsionarse */
 }
-
 .card-body {
   padding: 15px;
   text-align: center;
 }
 
+
+/* Formulario */
 /* Estilos para el contenedor flotante del formulario */
 .form-container {
   width: 50%;
@@ -208,37 +206,18 @@ img.img-fluid {
   color: white; /* Color del texto */
 }
 
-/* Ajustes para el formulario de contacto en pantallas pequeñas */
-@media (max-width: 768px) {
-  .form-container {
-    width: 90%; /* Hacer el formulario más estrecho en móviles */
-    padding: 15px;
-    margin-top: 30px; /* Ajustar el margen superior */
-    top: 45%; /* Centrar verticalmente */
-    overflow-y: auto; /* Agregar scroll vertical si es necesario */
-  }
-}
 
-  /* Permitir scroll en la página completa para pantallas pequeñas */
-  body, html {
-    overflow-y: auto;
-  }
 
+
+
+/* Otros ajustes */
 /* Desactivar el cambio de puntero */
 .no-pointer {
   pointer-events: none;
 }
 
 
-/* Otros ajustes para mejorar la responsividad en pantallas pequeñas */
-.product-gallery {
-  margin-top: 20px;
-}
-
-
-
-
-
+/* Ajustes en Javascript */
 /* Modo Daltonismo */
 .daltonism-mode body,
 .daltonism-mode .navbar,

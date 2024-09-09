@@ -47,20 +47,15 @@
               <img src="img/carrito_icono.png" alt="Carrito" width="24" height="24" class="me-2">
               Carrito
             </a>
-
-       
           </li>
-
-
         </ul>
-                                 <!-- Botón para activar/desactivar el modo daltonismo -->
-                                 <button id="toggleDaltonismMode" class="btn btn-link p-0 ms-3">
-                                  <img src="img/daltonismo.png" alt="Modo Daltonismo" width="34" height="34">
-                                </button>
+          <!-- Botón para activar/desactivar el modo daltonismo -->
+           <button id="toggleDaltonismMode" class="btn btn-link p-0 ms-3 icono-daltonismo">
+               <img src="img/daltonismo.png" alt="Modo Daltonismo" width="34" height="34">
+           </button>
                               
-                                <!-- Script para activar/desactivar el modo daltonismo -->
-                                  <script src="javascript/javascript.js"></script>
-
+               <!-- Script para activar/desactivar el modo daltonismo -->
+                 <script src="javascript/javascript.js"></script>
       </div>
     </div>
   </nav>
@@ -72,13 +67,13 @@
       <img src="img/imagen_main.jpg" class="img-fluid w-100 h-100 main-image" style="object-fit: cover;" alt="Imagen Main">
 
       <!-- Hiperenlaces verticales en la esquina superior derecha -->
-      <div class="position-absolute top-0 end-0 p-3 text-end text-vertical">
+      <div id="navegacion-vertical" class="position-absolute top-0 end-0 p-3 text-end text-vertical">
         <a href="index.html" class="text-white text-no-underline d-block mb-2">Inicio</a>
         <a href="shop.html" class="text-white text-no-underline d-block mb-2">Tienda</a>
       </div>
 
       <!-- Contenedor flotante para el formulario de contacto centrado -->
-      <div class="form-container">
+      <div class="form-container align-content-md-center">
          <h2 class="text-center">Formulario de Contacto</h2>
         <form>
           <!-- Campo Nombre -->
