@@ -17,146 +17,155 @@
 </head>
 
 <body class="bg-dark text-white">
-  <!-- Barra superior con logo, redes sociales e icono del carrito -->
-  <!-- responsiva -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <!-- Logo y letras -->
-      <a class="navbar-brand d-flex align-items-center no-pointer" href="#">
-        <img src="img/logo_tienda.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-top me-2">
-        <img src="img/letras_logo.png" alt="Logo" width="140" height="40" class="d-inline-block align-text-top me-2">
-      </a>
-  
-      <!-- Botón para expandir/colapsar la navbar en móviles -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <!-- Contenedor colapsable para los iconos de redes sociales y el carrito -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav w-100 d-flex justify-content-between align-items-center">
-          <!-- Iconos de redes sociales -->
-          <li class="social-icons d-flex">
+  <!-- Encabezado -->
+  <header>
+    <!-- Barra superior con logo, redes sociales e icono del carrito -->
+    <!-- responsiva -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- Logo y letras -->
+        <a class="navbar-brand d-flex align-items-center no-pointer" href="#">
+          <img src="img/logo_tienda.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-top me-2">
+          <img src="img/letras_logo.png" alt="Logo" width="140" height="40" class="d-inline-block align-text-top me-2">
+        </a>
 
-          <!-- Botón para activar/desactivar el modo daltonismo -->
-          <button id="toggleDaltonismMode" class="btn btn-link p-0 ms-3 icono-daltonismo">
-            <img src="img/daltonismo.png" alt="Modo Daltonismo" width="34" height="34">
-          </button>
+        <!-- Botón para expandir/colapsar la navbar en móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <!-- Script para activar/desactivar el modo daltonismo -->
-          <script src="javascript/javascript.js"></script>
+        <!-- Contenedor colapsable para los iconos de redes sociales y el carrito -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav w-100 d-flex justify-content-between align-items-center">
+            <!-- Iconos de redes sociales -->
+            <li class="social-icons d-flex">
 
-            <a class="nav-link" href="https://facebook.com" target="_blank">
-              <img src="img/facebook_icono.png" alt="Facebook" width="34" height="34">
-            </a>
-            <a class="nav-link" href="https://twitter.com" target="_blank">
-              <img src="img/twitter_icono.png" alt="Twitter" width="34" height="34">
-            </a>
-            <a class="nav-link" href="https://instagram.com" target="_blank">
-              <img src="img/instagram_icono.png" alt="Instagram" width="34" height="34">
-            </a>
-          </li>
-  
-          <!-- Carrito alineado a la derecha -->
-          <li class="nav-item cart">
-            <a class="nav-link" href="#">
-              <img src="img/carrito_icono.png" alt="Carrito" width="24" height="24" class="me-2">
-              Carrito
-            </a>
-          </li>
-        </ul>
+              <!-- Botón para activar/desactivar el modo daltonismo -->
+              <button id="toggleDaltonismMode" class="btn btn-link p-0 ms-3 icono-daltonismo">
+                <img src="img/daltonismo.png" alt="Modo Daltonismo" width="34" height="34">
+              </button>
+
+              <!-- Script para activar/desactivar el modo daltonismo -->
+              <script src="javascript/javascript.js"></script>
+
+              <!-- Redes Sociales -->
+              <a class="nav-link" href="https://facebook.com" target="_blank">
+                <img src="img/facebook_icono.png" alt="Facebook" width="34" height="34">
+              </a>
+              <a class="nav-link" href="https://twitter.com" target="_blank">
+                <img src="img/twitter_icono.png" alt="Twitter" width="34" height="34">
+              </a>
+              <a class="nav-link" href="https://instagram.com" target="_blank">
+                <img src="img/instagram_icono.png" alt="Instagram" width="34" height="34">
+              </a>
+            </li>
+
+            <!-- Carrito alineado a la derecha -->
+            <li class="nav-item cart">
+              <a class="nav-link" href="#">
+                <img src="img/carrito_icono.png" alt="Carrito" width="24" height="24" class="me-2">
+                Carrito
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <!-- Contenedor principal con imagen de fondo -->
-  <div class="container-fluid p-0 bg-dark">
-    <div class="position-relative w-100" style="height: 90vh;">
-      <!-- Imagen de fondo -->
-      <img src="img/imagen_main.jpg" class="img-fluid w-100 h-100 main-image" style="object-fit: cover;" alt="Imagen Main">
+  <!-- Contenido Principal -->
+  <main>
+    <!-- Sección principal -->
+    <section>
+      <!-- Contenedor principal con imagen de fondo -->
+      <div class="container-fluid p-0 bg-dark">
+        <div class="position-relative w-100" style="height: 90vh;">
+          <!-- Imagen de fondo -->
+          <img src="img/imagen_main.jpg" class="img-fluid w-100 h-100 main-image" style="object-fit: cover;" alt="Imagen Main">
 
-      <!-- Hiperenlaces verticales en la esquina superior derecha -->
-      <div class="position-absolute top-0 end-0 p-3 text-end text-vertical">
-        <a href="index.html" class="text-white text-no-underline d-block mb-2">Inicio</a>
-        <a href="contact.html" class="text-white text-no-underline d-block">Contacto</a>
-      </div>
-
-      <!-- Contenedor flotante para la galería de productos -->
-      <div class="gallery-container">
-        <h2 class="text-white">Nuestras Mejores Figuras:</h2>
-        
-        <!-- Fila de productos -->
-        <div class="row">
-          <!-- Primer producto -->
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="card bg-dark text-white">
-              <img src="img/imgs_tienda/T-MOBAT_O_P_1.webp" class="card-img-top" alt="Producto 1">
-              <div class="card-body">
-                <h5 class="card-title">MOBAT * Prime</h5>
-                <p class="card-text">Crossover entre Gi-Joe y Transformers/O.Prime.</p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Segundo producto -->
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="card bg-dark text-white">
-              <img src="img/imgs_tienda/Cobra_Rattler_2.webp" class="card-img-top" alt="Producto 2">
-              <div class="card-body">
-                <h5 class="card-title">Cobra Rattler</h5>
-                <p class="card-text">Jet de ataque terrestre Cobra Rattler de GI-Joe.</p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Tercer producto -->
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="card bg-dark text-white">
-              <img src="img/imgs_tienda/Hordak_ToG_3.webp" class="card-img-top" alt="Producto 3">
-              <div class="card-body">
-                <h5 class="card-title">Hordak * ToG</h5>
-                <p class="card-text">Turtles of Grayskull - MoTu Crossover.</p>
-              </div>
-            </div>
+          <!-- Hiperenlaces verticales en la esquina superior derecha -->
+          <div class="position-absolute top-0 end-0 p-3 text-end text-vertical">
+            <a href="index.html" class="text-white fw-bolder text-no-underline d-block mb-2">Inicio</a>
+            <a href="contact.html" class="text-white fw-bolder text-no-underline d-block">Contacto</a>
           </div>
 
-          <!-- Cuarto producto -->
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="card bg-dark text-white">
-              <img src="img/imgs_tienda/Jango_Fett_4.webp" class="card-img-top" alt="Producto 4">
-              <div class="card-body">
-                <h5 class="card-title">Jango Fett Classic</h5>
-                <p class="card-text">Regresará a la colección Star Wars Vintage.</p>
+          <!-- Contenedor flotante para la galería de productos -->
+          <article class="gallery-container">
+            <h2 class="text-white">Nuestras Mejores Figuras:</h2>
+            
+            <!-- Fila de productos -->
+            <div class="row">
+              <!-- Primer producto -->
+              <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card bg-dark text-white">
+                  <img src="img/imgs_tienda/T-MOBAT_O_P_1.webp" class="card-img-top" alt="Producto 1">
+                  <div class="card-body">
+                    <h5 class="card-title">MOBAT * Prime</h5>
+                    <p class="card-text">Crossover entre Gi-Joe y Transformers/O.Prime.</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+              
+              <!-- Segundo producto -->
+              <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card bg-dark text-white">
+                  <img src="img/imgs_tienda/Cobra_Rattler_2.webp" class="card-img-top" alt="Producto 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Cobra Rattler</h5>
+                    <p class="card-text">Jet de ataque terrestre Cobra Rattler de GI-Joe.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Tercer producto -->
+              <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card bg-dark text-white">
+                  <img src="img/imgs_tienda/Hordak_ToG_3.webp" class="card-img-top" alt="Producto 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Hordak * ToG</h5>
+                    <p class="card-text">Turtles of Grayskull - MoTu Crossover.</p>
+                  </div>
+                </div>
+              </div>
 
-          <!-- Quinto producto -->
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="card bg-dark text-white">
-              <img src="img/imgs_tienda/Motu_Master_5.webp" class="card-img-top" alt="Producto 5">
-              <div class="card-body">
-                <h5 class="card-title">MOTU Master * 14</h5>
-                <p class="card-text">Figuras N.O = 14. Masters of Universe.</p>
+              <!-- Cuarto producto -->
+              <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card bg-dark text-white">
+                  <img src="img/imgs_tienda/Jango_Fett_4.webp" class="card-img-top" alt="Producto 4">
+                  <div class="card-body">
+                    <h5 class="card-title">Jango Fett Classic</h5>
+                    <p class="card-text">Regresará a la colección Star Wars Vintage.</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <!-- Sexto producto -->
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="card bg-dark text-white">
-              <img src="img/imgs_tienda/Splinter_Skull_ToG_6.webp" class="card-img-top" alt="Producto 6">
-              <div class="card-body">
-                <h5 class="card-title">Splinter Skull * ToG</h5>
-                <p class="card-text">Splinter-Skeletor. Cvr. Turtles of Grayskull.</p>
+              <!-- Quinto producto -->
+              <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card bg-dark text-white">
+                  <img src="img/imgs_tienda/Motu_Master_5.webp" class="card-img-top" alt="Producto 5">
+                  <div class="card-body">
+                    <h5 class="card-title">MOTU Master * 14</h5>
+                    <p class="card-text">Figuras N.O = 14. Masters of Universe.</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div> <!-- Fin de la fila de productos -->
-      </div> <!-- Fin del contenedor de la galería -->
-    </div> <!-- Fin del contenedor principal con imagen de fondo -->
-  </div> <!-- Fin del contenedor principal -->
+
+              <!-- Sexto producto -->
+              <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card bg-dark text-white">
+                  <img src="img/imgs_tienda/Splinter_Skull_ToG_6.webp" class="card-img-top" alt="Producto 6">
+                  <div class="card-body">
+                    <h5 class="card-title">Splinter Skull * ToG</h5>
+                    <p class="card-text">Splinter-Skeletor. Cvr. Turtles of Grayskull.</p>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- Fin de la fila de productos -->
+          </article> <!-- Fin del artículo de la galería -->
+        </div> <!-- Fin del contenedor principal con imagen de fondo -->
+      </div> <!-- Fin del contenedor principal -->
+    </section>
+  </main>
 
 </body>
 </html>
-

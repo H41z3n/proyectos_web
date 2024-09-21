@@ -20,9 +20,9 @@
 
 /* Texto Flotante (Nombre_Sitio) */
 .site-name-float {
-  color: rgb(82, 146, 62);
+  color: rgb(24, 136, 8);
   font-family: 'OldSchoolUnitedShadowItalic', sans-serif;
-  font-size: 4rem; /* Tamaño de letra más grande */
+  font-size: 6rem; /* Tamaño de letra más grande */
   font-weight: 700;
   background-color: rgba(255, 255, 255, 0); /* Fondo blanco semitransparente */
   padding: 5px 10px; /* Espaciado interno */
@@ -111,6 +111,7 @@ img.img-fluid {
   text-decoration: none;
   text-orientation: upright;
   font-size: 1.2rem !important;
+  color: white; /* Color por defecto */
 }
 
 /* Enlaces de navegación sin subrayado */

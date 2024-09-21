@@ -18,113 +18,133 @@
 </head>
 <body class="bg-dark text-white">
   
-  <!-- Barra superior con logo, redes sociales e icono del carrito -->
-  <!-- responsiva -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <!-- Logo y letras -->
-      <a class="navbar-brand d-flex align-items-center no-pointer" href="#">
-        <img src="img/logo_tienda.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-top me-2">
-        <img src="img/letras_logo.png" alt="Logo" width="140" height="40" class="d-inline-block align-text-top me-2">
-      </a>
-  
-
+  <!-- Encabezado -->
+  <header>
+    <!-- Barra superior con logo, redes sociales e icono del carrito -->
+    <!-- responsiva -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- Logo y letras -->
+        <a class="navbar-brand d-flex align-items-center no-pointer" href="#">
+          <img src="img/logo_tienda.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-top me-2">
+          <img src="img/letras_logo.png" alt="Logo" width="140" height="40" class="d-inline-block align-text-top me-2">
+        </a>
     
-      <!-- Botón para expandir/colapsar la navbar en móviles -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <!-- Contenedor colapsable para los iconos de redes sociales y el carrito -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav w-100 d-flex justify-content-between align-items-center">
-          
-          <!-- En esta parte vamos a obviar los iconos sociales -->
+        <!-- Botón para expandir/colapsar la navbar en móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <!-- Carrito alineado a la derecha -->
-          <li class="nav-item cart">
-            <a class="nav-link" href="#">
-              <img src="img/carrito_icono.png" alt="Carrito" width="24" height="24" class="me-2">
-              Carrito
-            </a>
-          </li>
-        </ul>
-          <!-- Botón para activar/desactivar el modo daltonismo -->
-           <button id="toggleDaltonismMode" class="btn btn-link p-0 ms-3 icono-daltonismo">
-               <img src="img/daltonismo.png" alt="Modo Daltonismo" width="34" height="34">
-           </button>
-                              
-               <!-- Script para activar/desactivar el modo daltonismo -->
-                 <script src="javascript/javascript.js"></script>
+        <!-- Contenedor colapsable para los iconos de redes sociales y el carrito -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav w-100 d-flex justify-content-between align-items-center">
+            <!-- Iconos de redes sociales -->
+            <li class="social-icons d-flex">
+
+              <!-- Botón para activar/desactivar el modo daltonismo -->
+              <button id="toggleDaltonismMode" class="btn btn-link p-0 ms-3 icono-daltonismo">
+                <img src="img/daltonismo.png" alt="Modo Daltonismo" width="34" height="34">
+              </button>
+
+              <!-- Script para activar/desactivar el modo daltonismo -->
+              <script src="javascript/javascript.js"></script>
+
+              <!-- Redes Sociales -->
+              <a class="nav-link" href="https://facebook.com" target="_blank">
+                <img src="img/facebook_icono.png" alt="Facebook" width="34" height="34">
+              </a>
+              <a class="nav-link" href="https://twitter.com" target="_blank">
+                <img src="img/twitter_icono.png" alt="Twitter" width="34" height="34">
+              </a>
+              <a class="nav-link" href="https://instagram.com" target="_blank">
+                <img src="img/instagram_icono.png" alt="Instagram" width="34" height="34">
+              </a>
+            </li>
+
+            <!-- Carrito alineado a la derecha -->
+            <li class="nav-item cart">
+              <a class="nav-link" href="#">
+                <img src="img/carrito_icono.png" alt="Carrito" width="24" height="24" class="me-2">
+                Carrito
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
   
-  <!-- Contenedor principal con imagen de fondo -->
-  <div class="container-fluid p-0 bg-dark">
-    <div class="position-relative w-100" style="height: 90vh;">
-      <!-- Imagen de fondo -->
-      <img src="img/imagen_main.jpg" class="img-fluid w-100 h-100 main-image" style="object-fit: cover;" alt="Imagen Main">
+  <!-- Contenido Principal -->
+  <main>
+    <!-- Sección principal -->
+    <section>
+      <!-- Contenedor principal con imagen de fondo -->
+      <div class="container-fluid p-0 bg-dark">
+        <div class="position-relative w-100" style="height: 90vh;">
+          <!-- Imagen de fondo -->
+          <img src="img/imagen_main.jpg" class="img-fluid w-100 h-100 main-image" style="object-fit: cover;" alt="Imagen Main">
 
-      <!-- Hiperenlaces verticales en la esquina superior derecha -->
-      <div id="navegacion-vertical" class="position-absolute top-0 end-0 p-3 text-end text-vertical">
-        <a href="index.html" class="text-white text-no-underline d-block mb-2">Inicio</a>
-        <a href="shop.html" class="text-white text-no-underline d-block mb-2">Tienda</a>
-      </div>
+          <!-- Hiperenlaces verticales en la esquina superior derecha -->
+          <div id="navegacion-vertical" class="position-absolute top-0 end-0 p-3 text-end text-vertical">
+            <a href="index.html" class="text-white fw-bolder text-no-underline d-block mb-2">Inicio</a>
+            <a href="shop.html" class="text-white fw-bolder text-no-underline d-block mb-2">Tienda</a>
+          </div>
 
-      <!-- Contenedor flotante para el formulario de contacto centrado -->
-      <div class="form-container align-content-md-center">
-         <h2 class="text-center">Formulario de Contacto</h2>
-        <form>
-          <!-- Campo Nombre -->
-          <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required>
-          </div>
-          <!-- Campo Apellidos -->
-          <div class="mb-3">
-            <label for="apellidos" class="form-label">Apellidos</label>
-            <input type="text" class="form-control" id="apellidos" name="apellidos" required>
-          </div>
-          <!-- Campo Dirección -->
-          <div class="mb-3">
-            <label for="direccion" class="form-label">Dirección</label>
-            <input type="text" class="form-control" id="direccion" name="direccion" required>
-          </div>
-          <!-- Campo Correo Electrónico -->
-          <div class="mb-3">
-            <label for="correo" class="form-label">Correo Electrónico</label>
-            <input type="email" class="form-control" id="correo" name="correo" required>
-          </div>
-          <!-- Campo "Cómo nos conociste?" con botones de radio -->
-          <div class="mb-3">
-            <label class="form-label">¿Cómo nos conociste?</label><br>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="conociste" id="amigo" value="amigo" required>
-              <label class="form-check-label" for="amigo">
-                Recomendación de un amigo
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="conociste" id="redes" value="redes" required>
-              <label class="form-check-label" for="redes">
-                Influencer/Redes sociales
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="conociste" id="internet" value="internet" required>
-              <label class="form-check-label" for="internet">
-                Investigando por internet
-              </label>
-            </div>
-          </div>
-          <!-- Botón de Envío -->
-          <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-      </div> <!-- Fin del contenedor del formulario -->
-    </div> <!-- Fin del contenedor principal con imagen de fondo -->
-  </div> <!-- Fin del contenedor principal -->
+          <!-- Contenedor flotante para el formulario de contacto centrado -->
+          <article class="form-container align-content-md-center">
+             <h2 class="text-center">Formulario de Contacto</h2>
+            <form>
+              <!-- Campo Nombre -->
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+              </div>
+              <!-- Campo Apellidos -->
+              <div class="mb-3">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" name="apellidos" required>
+              </div>
+              <!-- Campo Dirección -->
+              <div class="mb-3">
+                <label for="direccion" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="direccion" name="direccion" required>
+              </div>
+              <!-- Campo Correo Electrónico -->
+              <div class="mb-3">
+                <label for="correo" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="correo" name="correo" required>
+              </div>
+              <!-- Campo "Cómo nos conociste?" con botones de radio -->
+              <div class="mb-3">
+                <label class="form-label">¿Cómo nos conociste?</label><br>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="conociste" id="amigo" value="amigo" required>
+                  <label class="form-check-label" for="amigo">
+                    Recomendación de un amigo
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="conociste" id="redes" value="redes" required>
+                  <label class="form-check-label" for="redes">
+                    Influencer/Redes sociales
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="conociste" id="internet" value="internet" required>
+                  <label class="form-check-label" for="internet">
+                    Investigando por internet
+                  </label>
+                </div>
+              </div>
+              <!-- Botón de Envío -->
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+          </article> <!-- Fin del artículo del formulario -->
+        </div> <!-- Fin del contenedor principal con imagen de fondo -->
+      </div> <!-- Fin del contenedor principal -->
+    </section>
+  </main>
 </body>
 </html>
-
